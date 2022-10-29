@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\lokum\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\lokum\\.nuget\\packages"
+    ]
+  }
+}

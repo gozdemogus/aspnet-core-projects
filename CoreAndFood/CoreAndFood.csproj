@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\web2\.git\config" />
+    <None Include="wwwroot\web2\.git\description" />
+    <None Include="wwwroot\web2\.git\HEAD" />
+    <None Include="wwwroot\web2\.git\hooks\applypatch-msg.sample" />
+    <None Include="wwwroot\web2\.git\hooks\commit-msg.sample" />
+    <None Include="wwwroot\web2\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="wwwroot\web2\.git\hooks\post-update.sample" />
+    <None Include="wwwroot\web2\.git\hooks\pre-applypatch.sample" />
+    <None Include="wwwroot\web2\.git\hooks\pre-commit.sample" />
+    <None Include="wwwroot\web2\.git\hooks\pre-merge-commit.sample" />
+    <None Include="wwwroot\web2\.git\hooks\pre-push.sample" />
+    <None Include="wwwroot\web2\.git\hooks\pre-rebase.sample" />
+    <None Include="wwwroot\web2\.git\hooks\pre-receive.sample" />
+    <None Include="wwwroot\web2\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="wwwroot\web2\.git\hooks\push-to-checkout.sample" />
+    <None Include="wwwroot\web2\.git\hooks\update.sample" />
+    <None Include="wwwroot\web2\.git\index" />
+    <None Include="wwwroot\web2\.git\info\exclude" />
+    <None Include="wwwroot\web2\.git\logs\HEAD" />
+    <None Include="wwwroot\web2\.git\logs\refs\heads\master" />
+    <None Include="wwwroot\web2\.git\logs\refs\remotes\origin\HEAD" />
+    <None Include="wwwroot\web2\.git\objects\pack\pack-e77576667d30ff90bb4ba5ab11441907e3ae447a.idx" />
+    <None Include="wwwroot\web2\.git\objects\pack\pack-e77576667d30ff90bb4ba5ab11441907e3ae447a.pack" />
+    <None Include="wwwroot\web2\.git\packed-refs" />
+    <None Include="wwwroot\web2\.git\refs\heads\master" />
+    <None Include="wwwroot\web2\.git\refs\remotes\origin\HEAD" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    <PackageReference Include="X.PagedList.Mvc.Core" Version="8.4.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\web2\.git\objects\info\" />
+    <Folder Include="wwwroot\web2\.git\refs\tags\" />
+  </ItemGroup>
+
+</Project>
