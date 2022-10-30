@@ -8,7 +8,7 @@ namespace CoreAndFood.Controllers
     public class CategoryController : Controller
     {
         CategoryRepository categoryRepository = new CategoryRepository();
-        [Authorize]
+       
         public IActionResult Index()
         {
             return View(categoryRepository.TList());
