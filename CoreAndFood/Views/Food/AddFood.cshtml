@@ -1,4 +1,4 @@
-﻿@model CoreAndFood.Models.Food
+﻿@model CoreAndFood.Models.AddProduct
 
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -6,8 +6,7 @@
 
 <h2>Food Add Page</h2>
 <br />
-@using (Html.BeginForm("AddFood", "Food", FormMethod.Post))
-{
+<form class="form-group" method="post" enctype="multipart/form-data">
     @Html.Label("Food Name")
     @Html.TextBoxFor(x=>x.Name, new {@class="form-control"})
     <br />
@@ -17,8 +16,9 @@
     @Html.Label("Price")
     @Html.TextBoxFor(x=>x.Price, new {@class="form-control"})
     <br />
-    @Html.Label("Image")
-    @Html.TextBoxFor(x=>x.ImageURL, new {@class="form-control"})
+    @Html.Label("Choose Image")
+    @* @Html.TextBoxFor(x=>x.ImageURL, new {@class="form-control"})*@
+    <input type="file" name="ImageURL" />
     <br />
     @Html.Label("Category")
     @Html.DropDownListFor(x=>x.CategoryID,(List<SelectListItem>)ViewBag.v1, new {@class="form-control"})
@@ -27,4 +27,4 @@
     @Html.TextAreaFor(x=>x.Description, new {@class="form-control"})
     <br />
     <button class="btn btn-info">Save</button>
-}
+</form>

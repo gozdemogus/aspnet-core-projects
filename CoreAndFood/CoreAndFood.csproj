@@ -51,6 +51,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\Photos\" />
     <Folder Include="wwwroot\web2\.git\objects\info\" />
     <Folder Include="wwwroot\web2\.git\refs\tags\" />
   </ItemGroup>
