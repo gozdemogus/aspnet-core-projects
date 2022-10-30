@@ -139,7 +139,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </button>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-               @await Component.InvokeAsync("CategoryGetList")
+                @await Component.InvokeAsync("CategoryGetList")
                 <!-- /.navbar-collapse -->
             </nav>
         </div>
@@ -228,8 +228,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="top-brands">
         <div class="container">
             <h3>Hot Offers</h3>
-            @await Component.InvokeAsync("FoodGetList")
-            @RenderBody()
+
+            @await Component.InvokeAsync("FoodListByCategory", new{id=ViewBag.x})
         </div>
     </div>
     <!-- //top-brands -->

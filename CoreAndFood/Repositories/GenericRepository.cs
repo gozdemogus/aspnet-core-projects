@@ -1,7 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 
 using System.Linq;
+using System.Linq.Expressions;
 
 namespace CoreAndFood.Models
 {
@@ -37,6 +39,12 @@ namespace CoreAndFood.Models
         public List<T> TList(string p)
         {
             return c.Set<T>().Include(p).ToList();
+        }
+
+        //generic arama yapmak icin bu method kullanılır
+        public List<T> List(Expression<Func<T,bool>> filter)
+        {
+            return c.Set<T>().Where(filter).ToList();
         }
     }
 }
